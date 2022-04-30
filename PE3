@@ -34,16 +34,6 @@ doing xs limit = uptoo xs 0
                             swap (x:y:xs) | x > y     = x : (uptoo (y:xs) (count +1))
                                           | otherwise = y : x:(uptoo xs (count +2))
 
---doonce (length xs-1) xs
- --   where doonce v (a:b:c) | v>0 = swap (a:b:c)
-   --                        |otherwise = (a:b:c)
-     --                      where swap [] = []
-       --                          swap [x] = [x]
-         --                        
-           --                      swap (a:b:c) | b>a = (a:(b:(doonce (v-2) c)))
-             --                                 |otherwise = (a:(doonce (v-1) (b:c)))
-                           
-
 -- bubblePrivates: The same thing, but on privates with a key function and an asc/desc option.
 bubblePrivates :: (Private -> Int) -> Bool -> [Private] -> [Private]
 firstvar (a,_) = a
