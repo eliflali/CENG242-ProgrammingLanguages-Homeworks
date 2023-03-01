@@ -1,1 +1,1 @@
-# My-Haskell-homeworks
+# CENG242 HOMEWORKS
